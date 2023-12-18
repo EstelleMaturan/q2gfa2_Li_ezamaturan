@@ -727,13 +727,20 @@ section{
 }
 .kuiperBelt1{
     position: absolute;
-    top:-1vh;
-    left:59vw;
+    top:-2vh;
+    left:58vw;
 }
 .kuiperBelt2{
     position: absolute;
     top:-0.75vh;
-    left:57.6vw;
+    left:55vw;
+    transform: skewX(6deg); /*to make the illusion that the ices in the kuiper belt is scattered rendomly, not just placed repeatedly*/
+}
+.kuiperBelt3{
+    position: absolute;
+    top:-0.75vh;
+    left:56vw;
+    transform: skewX(-2deg); /*to make the illusion that the ices in the kuiper belt is scattered rendomly, not just placed repeatedly*/
 }
 #jupiter{
     background: url('../images/style/jupiter.gif');
@@ -831,6 +838,7 @@ section{
     to{color: #a87bff; transform: rotate(360deg);}
 }
 @keyframes stars{
-    from{opacity: 0.5;}
-    to{opacity: 0.7;}
+    0%{opacity: 0.5; transform: scale(0.95, 0.95);}
+    50%{opacity: 0.7; transform: scale(1, 1);}
+    100%{opacity: 0.9; transform: scale(0.95, 0.95);}
 }
