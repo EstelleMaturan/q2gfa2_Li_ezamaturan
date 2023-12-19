@@ -67,8 +67,8 @@ section{
 }
 .asteroids{
     background: url('../images/style/asteroid.gif');
-    width: 1vw;
-    height: 2vh;
+    width: 0.75vw;
+    height: 1.5vh;
     position: absolute;
     animation-name: belts;
     animation-duration: 10s;
